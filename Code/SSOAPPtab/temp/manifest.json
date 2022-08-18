@@ -1,0 +1,50 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "43943640-1d96-11ed-8a9a-3d93eea66af0",
+    "version": "0.0.1",
+    "packageName": "ssoapptab",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://fb62-183-82-206-221.ngrok.io",
+        "privacyUrl": "https://fb62-183-82-206-221.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://fb62-183-82-206-221.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "SSOAPPtab",
+        "full": "SSOAPPtab"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [{
+        "configurationUrl": "https://fb62-183-82-206-221.ngrok.io/ssOtestTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+        "canUpdateConfiguration": true,
+        "scopes": [
+            "team"
+        ]
+    }],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "fb62-183-82-206-221.ngrok.io"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false,
+    "webApplicationInfo": {
+        "id": "783cd430-f689-40cc-9327-68643eb72e49",
+        "resource": "api://fb62-183-82-206-221.ngrok.io/783cd430-f689-40cc-9327-68643eb72e49"
+    }
+}

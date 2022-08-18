@@ -1,0 +1,17 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.1",
+    "fallbackText": "This card requires Media to be viewed. Ask your platform to update to Adaptive Cards v1.1 for this and more!",
+    "body": [{
+        "type": "Image",
+        "style": "Person",
+        "url": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
+        "size": "Small"
+    }],
+    "actions": [{
+        "type": "Action.OpenUrl",
+        "title": "Learn more",
+        "url": "https://adaptivecards.io"
+    }]
+}

@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "{{APPLICATION_ID}}",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+        "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+        "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+    },
+    "name": {
+        "short": "AppEx1MessagingEx01",
+        "full": "AppEx1MessagingEx01"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "{{MICROSOFT_APP_ID}}",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "searchEBooksMessageExtension",
+            "title": "Get Google Books",
+            "description": "Get all books based on  ISBN number",
+            "initialRun": true,
+            "parameters": [{
+                "name": "searchKeyword",
+                "description": "Enter ISBN number to search ebooks",
+                "title": "ISBN NUmber"
+            }],
+            "type": "query"
+        }],
+        "messageHandlers": [{
+            "type": "link",
+            "value": {
+                "domains": [
+                    "*.wikipedia.org"
+                ]
+            }
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{PUBLIC_HOSTNAME}}",
+        "*.wikipedia.org"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false
+}

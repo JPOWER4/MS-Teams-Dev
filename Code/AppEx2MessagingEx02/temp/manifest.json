@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "8fac9700-1eb5-11ed-8854-b3c38580f863",
+  "version": "0.0.1",
+  "packageName": "appex2messagingex02",
+  "developer": {
+    "name": "Jenkins NS",
+    "websiteUrl": "https://e227-183-82-26-222.ngrok.io",
+    "privacyUrl": "https://e227-183-82-26-222.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://e227-183-82-26-222.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "AppEx2MessagingEx02",
+    "full": "AppEx2MessagingEx02"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "2605ddd8-1ec9-4cf8-b4f0-c3f85aa4da00",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "appEx2MessagingEx02MMessageExtension",
+          "title": "AppEx2MessagingEx02 M",
+          "description": "Description of AppEx2MessagingEx02 M",
+          "initialRun": true,
+          "type": "action",
+          "context": [
+            "compose",
+            "commandBox",
+            "message"
+          ],
+          "fetchTask": true
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "e227-183-82-26-222.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}

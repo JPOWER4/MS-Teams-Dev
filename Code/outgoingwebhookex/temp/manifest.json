@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "635c4cc0-1ee9-11ed-9b64-e925f7e60b5f",
+  "version": "0.0.1",
+  "packageName": "outgoingwebhookex",
+  "developer": {
+    "name": "Jenkins NS",
+    "websiteUrl": "https://4b10-183-82-26-222.ngrok.io",
+    "privacyUrl": "https://4b10-183-82-26-222.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://4b10-183-82-26-222.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "outgoingwebhookex",
+    "full": "outgoingwebhookex"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "4b10-183-82-26-222.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}

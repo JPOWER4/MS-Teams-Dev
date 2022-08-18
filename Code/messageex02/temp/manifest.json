@@ -1,0 +1,56 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "e3d18540-1e8b-11ed-842d-9f4205ea3b84",
+    "version": "0.0.1",
+    "packageName": "messageex02",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://4790-183-82-26-222.ngrok.io",
+        "privacyUrl": "https://4790-183-82-26-222.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://4790-183-82-26-222.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "messageex02",
+        "full": "messageex02"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "a95fa28b-b93b-4e60-b49d-5751315dc0dc",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "getBGetBooksMessageExtension",
+            "title": "Get Books",
+            "description": "Description of Get Books",
+            "initialRun": true,
+            "type": "action",
+            "context": [
+                "compose",
+                "commandBox",
+                "message"
+            ],
+            "fetchTask": true
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "4790-183-82-26-222.ngrok.io"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false
+}

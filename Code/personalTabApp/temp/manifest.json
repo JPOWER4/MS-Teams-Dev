@@ -1,0 +1,50 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "81f54fa0-1cfb-11ed-bb0d-19ed4a430ca5",
+    "version": "0.0.1",
+    "packageName": "personaltabapp",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://4703-183-82-206-221.ngrok.io",
+        "privacyUrl": "https://4703-183-82-206-221.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://4703-183-82-206-221.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "personalTabApp",
+        "full": "personalTabApp"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [{
+        "entityId": "9da8e067-382b-489b-94d9-4fe8a0da3523",
+        "name": "personalTabApp",
+        "contentUrl": "https://4703-183-82-206-221.ngrok.io/personalTabAppTab/?name={loginHint}&tenant={tid}&theme={theme}",
+        "scopes": [
+            "personal"
+        ]
+    }],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "4703-183-82-206-221.ngrok.io"
+    ],
+    "showLoadingIndicator": false,
+    "webApplicationInfo": {
+        "id": "499b1b63-2d09-4d57-8072-896c698da148",
+        "resource": "api://4703-183-82-206-221.ngrok.io/499b1b63-2d09-4d57-8072-896c698da148"
+    }
+}

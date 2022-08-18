@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "69c856e0-1ee3-11ed-9e92-83d1046dd0cd",
+  "version": "0.0.1",
+  "packageName": "bottaskmoduleex",
+  "developer": {
+    "name": "Jenkins NS",
+    "websiteUrl": "https://1f7e-183-82-26-222.ngrok.io",
+    "privacyUrl": "https://1f7e-183-82-26-222.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://1f7e-183-82-26-222.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "botTaskModuleEx",
+    "full": "botTaskModuleEx"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [
+    {
+      "botId": "2605ddd8-1ec9-4cf8-b4f0-c3f85aa4da00",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "Who am I?",
+              "description": "Shows information about your Teams user"
+            },
+            {
+              "title": "Mention me",
+              "description": "Let the bot @mention you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "1f7e-183-82-26-222.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}

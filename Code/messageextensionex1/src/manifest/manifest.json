@@ -1,0 +1,68 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "{{APPLICATION_ID}}",
+    "version": "{{VERSION}}",
+    "packageName": "{{PACKAGE_NAME}}",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+        "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+        "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+    },
+    "name": {
+        "short": "messageextensionex1",
+        "full": "messageextensionex1"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "{{MICROSOFT_APP_ID}}",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "getBooksMessageExtension",
+            "title": "Get Books",
+            "description": "Search for a Book",
+            "initialRun": true,
+            "type": "query",
+            "context": [
+                "compose"
+            ],
+            "parameters": [{
+                "name": "searchKeyword",
+                "description": "Enter ISBN number to search",
+                "title": "ISBN Number"
+            }],
+
+            "fetchTask": true
+        }],
+        "messageHandlers": [{
+            "type": "link",
+            "value": {
+                "domains": [
+                    "*.wikipedia.org"
+                ]
+            }
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{{PUBLIC_HOSTNAME}}"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false
+}

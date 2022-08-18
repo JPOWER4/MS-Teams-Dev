@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "68d154c0-1dc7-11ed-ad10-21a10d7b08b3",
+    "version": "0.0.1",
+    "packageName": "conversationbotapp",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://1bf5-183-82-206-221.ngrok.io",
+        "privacyUrl": "https://1bf5-183-82-206-221.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://1bf5-183-82-206-221.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "conversationBotApp",
+        "full": "conversationBotApp"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [{
+        "botId": "9eddc117-78d2-4788-a214-51a60193f6a4",
+        "needsChannelSelector": true,
+        "isNotificationOnly": false,
+        "scopes": [
+            "team",
+            "personal"
+        ],
+        "commandLists": [{
+            "scopes": [
+                "team",
+                "personal"
+            ],
+            "commands": [{
+                    "title": "Help",
+                    "description": "Shows help information"
+                },
+                {
+                    "title": "MentionMe",
+                    "description": "Sends message with @mention of the sender"
+                }
+
+            ]
+        }]
+    }],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "1bf5-183-82-206-221.ngrok.io"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false
+}

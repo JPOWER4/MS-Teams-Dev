@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Jenkins NS"
+    },
+    "libraryName": "configurableTabApp",
+    "generator-version": "4.0.1"
+  }
+}

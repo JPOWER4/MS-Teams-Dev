@@ -1,0 +1,69 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "3c55f520-1df6-11ed-843d-7f902f255420",
+    "version": "0.0.1",
+    "packageName": "conversationbotinfy",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://fca8-183-82-26-222.ngrok.io",
+        "privacyUrl": "https://fca8-183-82-26-222.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://fca8-183-82-26-222.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "conversationBotinfy",
+        "full": "conversationBotinfy"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [{
+        "botId": "fe58ad40-5acc-412e-bd74-1dea9a84c1a4",
+        "needsChannelSelector": true,
+        "isNotificationOnly": false,
+        "scopes": [
+            "personal"
+        ],
+        "commandLists": [{
+            "scopes": [
+                "personal"
+            ],
+            "commands": [{
+                    "title": "Help",
+                    "description": "Shows help information"
+                },
+                {
+                    "title": "Who am I?",
+                    "description": "Shows information about your Teams user"
+                },
+                {
+                    "title": "mentionme",
+                    "description": "Let the bot @mention you"
+                }
+            ]
+        }]
+    }],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "fca8-183-82-26-222.ngrok.io"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false,
+    "webApplicationInfo": {
+        "id": "c5fd1a4d-90b5-4ed1-a4b3-d981b5216e5d",
+        "resource": "api://fca8-183-82-26-222.ngrok.io/c5fd1a4d-90b5-4ed1-a4b3-d981b5216e5d"
+    }
+}

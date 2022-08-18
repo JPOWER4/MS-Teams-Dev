@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "2dfd3ba0-1ec3-11ed-8a67-af627ea4a139",
+  "version": "0.0.1",
+  "packageName": "taskmodulestabex1",
+  "developer": {
+    "name": "Jenkins NS",
+    "websiteUrl": "https://a3cf-183-82-26-222.ngrok.io",
+    "privacyUrl": "https://a3cf-183-82-26-222.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://a3cf-183-82-26-222.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "taskmodulestabex1",
+    "full": "taskmodulestabex1"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://a3cf-183-82-26-222.ngrok.io/taskTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "a3cf-183-82-26-222.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}

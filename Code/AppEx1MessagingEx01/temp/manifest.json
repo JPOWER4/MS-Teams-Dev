@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "e859e930-1eaf-11ed-91ec-d9172cbbcfb9",
+    "version": "0.0.1",
+    "packageName": "appex1messagingex01",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://990f-183-82-26-222.ngrok.io",
+        "privacyUrl": "https://990f-183-82-26-222.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://990f-183-82-26-222.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "AppEx1MessagingEx01",
+        "full": "AppEx1MessagingEx01"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "2605ddd8-1ec9-4cf8-b4f0-c3f85aa4da00",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "searchEBooksMessageExtension",
+            "title": "Get Google Books",
+            "description": "Get all books based on  ISBN number",
+            "initialRun": true,
+            "parameters": [{
+                "name": "searchKeyword",
+                "description": "Enter ISBN number to search ebooks",
+                "title": "ISBN NUmber"
+            }],
+            "type": "query"
+        }],
+        "messageHandlers": [{
+            "type": "link",
+            "value": {
+                "domains": [
+                    "*.wikipedia.org"
+                ]
+            }
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "990f-183-82-26-222.ngrok.io",
+        "*.wikipedia.org"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false
+}
