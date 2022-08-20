@@ -1,0 +1,11 @@
+https://github.com/OfficeDev/microsoft-teams-apps-faqplus
+https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot
+
+Enable Streaming Endpoint
+With the Direct Line Speech channel connected to your bot, you now need to enable Bot Framework Protocol Streaming Extensions support for optimal, low-latency interaction.
+
+"Enable Streaming Endpoint" is needed for Speech support. If you don't use Speech input, you don't need to enable this option.
+
+Is it necessary?
+Yes, if you're using the Direct Line Speech channel, then it is a must before you enable Web socket support.
+No, if you're not using the Direct Line Speech channel, leave it unchecked as by default.
