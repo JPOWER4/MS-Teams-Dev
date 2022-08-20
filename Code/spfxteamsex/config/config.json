@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "infyspfx-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/infyspfx/InfyspfxWebPart.js",
+          "manifest": "./src/webparts/infyspfx/InfyspfxWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "InfyspfxWebPartStrings": "lib/webparts/infyspfx/loc/{locale}.js"
+  }
+}

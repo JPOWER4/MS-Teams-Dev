@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "spfxteamsex",
+    "libraryId": "0f1bc323-ace4-4204-9a32-1893a66916ab",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfxteamsex",
+    "solutionShortDescription": "spfxteamsex description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

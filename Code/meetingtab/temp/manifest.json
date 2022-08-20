@@ -1,0 +1,55 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "id": "3cca3200-202b-11ed-8579-dbc824766eda",
+    "version": "0.0.1",
+    "packageName": "meetingtab",
+    "developer": {
+        "name": "Jenkins NS",
+        "websiteUrl": "https://beb8-183-82-30-141.ngrok.io",
+        "privacyUrl": "https://beb8-183-82-30-141.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://beb8-183-82-30-141.ngrok.io/tou.html"
+    },
+    "name": {
+        "short": "meetingtab",
+        "full": "meetingtab"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [{
+        "configurationUrl": "https://beb8-183-82-30-141.ngrok.io/meetingtabTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+        "canUpdateConfiguration": true,
+        "scopes": [
+            "team",
+            "groupchat"
+        ],
+        "context": [
+            "channelTab",
+            "privateChatTab",
+            "meetingChatTab",
+            "meetingDetailsTab",
+            "meetingSidePanel",
+            "meetingStage"
+        ]
+    }],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "beb8-183-82-30-141.ngrok.io"
+    ],
+    "showLoadingIndicator": false,
+    "isFullScreen": false
+}
